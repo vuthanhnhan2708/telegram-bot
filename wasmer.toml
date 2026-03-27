@@ -1,0 +1,9 @@
+[package]
+name = "telegram-bot"
+version = "1.0.0"
+
+[[command]]
+name = "start"
+module = "nodejs"
+runner = "wasi"
+args = ["bash", "-lc", "npm install && npx openclaw gateway"]
